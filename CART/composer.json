@@ -1,0 +1,17 @@
+{
+    "name": "olegariojv/cart",
+    "autoload": {
+        "psr-4": {
+            "Olegariojv\\Cart\\": "src/",
+            "app\\":"app"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Victor",
+            "email": "olegarioo.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "version": "1.0.0"
+}

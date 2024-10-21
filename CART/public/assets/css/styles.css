@@ -1,0 +1,120 @@
+/* Estilo geral do container */
+#container {
+    width: 80%; /* Largura do container em 80% da tela */
+    margin: 20px auto; /* Margem superior e inferior de 20px e centraliza horizontalmente */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    padding: 20px; /* Espaçamento interno de 20px */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Cantos arredondados da borda */
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do container */
+}
+
+/* Estilo para o cabeçalho */
+h3 {
+    color: #333; /* Cor do texto em um tom de cinza escuro */
+    font-size: 1.8em; /* Tamanho da fonte do cabeçalho */
+    margin-bottom: 20px; /* Margem inferior de 20px */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a lista de produtos */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilo para cada produto no carrinho */
+.cart-product,
+ul li {
+    padding: 15px; /* Espaçamento interno de 15px */
+    border-bottom: 1px solid #ddd; /* Borda inferior cinza clara */
+    display: flex; /* Usado para alinhar itens horizontalmente */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para as propriedades de fundo e transformação */
+}
+
+/* Efeito ao passar o mouse sobre os produtos */
+.cart-product:hover,
+ul li:hover {
+    background-color: #f9f9f9; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.02); /* Aumenta ligeiramente o tamanho do item */
+}
+
+/* Estilo para o campo de quantidade */
+#cart-input-qty {
+    width: 60px; /* Largura do campo de entrada */
+    padding: 8px; /* Espaçamento interno de 8px */
+    margin-right: 10px; /* Margem à direita de 10px */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados da borda */
+}
+
+/* Estilo para links */
+a {
+    color: #3498db; /* Cor azul dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+a:hover {
+    color: #2980b9; /* Muda a cor para um tom mais escuro de azul */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para o botão "Adicionar ao Carrinho" */
+a[href*="add.php"] {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: white; /* Cor do texto em branco */
+    padding: 8px 12px; /* Espaçamento interno */
+    border-radius: 4px; /* Cantos arredondados da borda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse sobre o botão "Adicionar ao Carrinho" */
+a[href*="add.php"]:hover {
+    background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse */
+    transform: translateY(-2px); /* Move o botão levemente para cima */
+}
+
+/* Estilo para o botão de remoção */
+#cart-remove {
+    color: #e74c3c; /* Cor vermelha para o link de remoção */
+}
+
+/* Efeito ao passar o mouse sobre o botão de remoção */
+#cart-remove:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para a seção de total e botão de limpar */
+#cart-total-clear {
+    margin-top: 20px; /* Margem superior de 20px */
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para o total do carrinho */
+#cart-total {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do total */
+}
+
+/* Estilo para o botão de limpar carrinho */
+#cart-clear a {
+    background-color: #e74c3c; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto em branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados da borda */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse sobre o botão de limpar carrinho */
+#cart-clear a:hover {
+    background-color: #c0392b; /* Muda para um tom de vermelho mais escuro */
+    transform: translateY(-2px); /* Move o botão levemente para cima */
+}
