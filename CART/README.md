@@ -8,7 +8,6 @@ Um sistema simples de carrinho de compras em PHP com MySQL.
 - MySQL
 - Composer
 
-
 ## 🚀 Instalação
 
 ```bash
@@ -17,6 +16,7 @@ composer install
 ```
 
 Importe `app/database/loja.sql` no MySQL:
+
 ```sql
 mysql -u root loja < app/database/loja.sql
 ```
@@ -48,7 +48,9 @@ CART/
 ## 📄 Classes Principais
 
 ### Cart.php
+
 Gerencia operações do carrinho:
+
 - `add($id)` - Adiciona ou incrementa produto
 - `remove($id)` - Remove produto
 - `quantity($id, $qty)` - Atualiza quantidade
@@ -57,14 +59,19 @@ Gerencia operações do carrinho:
 - `dump()` - Debug
 
 ### CartProducts.php
+
 Combina dados da sessão com banco de dados:
+
 - `products($cartInterface)` - Retorna produtos com detalhes e total
 
 ### Connect.php
+
 Conexão singleton com MySQL (PDO)
 
 ### Read.php
+
 Consulta o banco de dados:
+
 - `all($table, $fields)` - Retorna todos os registros
 
 ## 🔄 Fluxo
@@ -78,18 +85,19 @@ Consulta o banco de dados:
 
 ## 🌐 URLs
 
-| URL | Função |
-|-----|--------|
-| `index.php` | Lista produtos |
-| `add.php?id=1` | Adiciona produto |
-| `cart.php` | Visualiza carrinho |
-| `remove.php?id=1` | Remove produto |
-| `clear.php` | Limpa carrinho |
+| URL                         | Função              |
+| --------------------------- | ------------------- |
+| `index.php`                 | Lista produtos      |
+| `add.php?id=1`              | Adiciona produto    |
+| `cart.php`                  | Visualiza carrinho  |
+| `remove.php?id=1`           | Remove produto      |
+| `clear.php`                 | Limpa carrinho      |
 | `quantidade.php?id=1&qty=5` | Atualiza quantidade |
 
 ## 💾 Banco de Dados
 
 Tabela `products`:
+
 ```sql
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
